@@ -10,6 +10,10 @@ def calc (Operator , Value1 , Value2):
         return (divide(Value1,Value2))
     elif Operator == "-":
         return (subtract(Value2, Value2))
+    elif Operator == "^":
+        return (power(Value1,Value2))
+    elif Operator == "%":
+        return (mod(Value1, Value2))
     else:
         print ("Invalid Operator")
 
@@ -26,6 +30,14 @@ def divide(x,y):
 def subtract(x,y):
     return x-y
 
+
+def power(x,y):
+    #this is the new operator routine
+    return x**y
+    
+def mod(x,y):
+    return x%y
+    
 
 def executefile (filename):
     f = open(filename, "r")
