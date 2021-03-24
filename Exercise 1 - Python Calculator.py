@@ -12,6 +12,8 @@ def calc (Operator , Value1 , Value2):
         return (subtract(Value2, Value2))
     elif Operator == "^":
         return (power(Value1,Value2))
+    elif Operator =="%"
+        return 
     else:
         print ("Invalid Operator")
 
@@ -31,6 +33,9 @@ def subtract(x,y):
 
 def power(x,y):
     return x**y
+    
+def mod(x,y):
+    return x%y
     
 
 def executefile (filename):
