@@ -12,6 +12,7 @@ def calc (Operator , Value1 , Value2):
         return (subtract(Value2, Value2))
     elif Operator == "^":
         return (power(Value1,Value2))
+
     elif Operator == "%":
         return (mod(Value1, Value2))
     else:
@@ -32,7 +33,6 @@ def subtract(x,y):
 
 
 def power(x,y):
-    #this is the new operator routine
     return x**y
     
 def mod(x,y):
